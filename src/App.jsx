@@ -4,7 +4,7 @@ import Footer from "./common/Footer";
 import Home from "./pages/Home";
 import Sources from "./pages/Sources";
 import Contact from "./pages/Contact";
-import Newsbycategorie from "../../topnews/src/Newsbycategorie";
+import Newsbycategorie from "./pages/Newsbycatgorie";
 import Searchnews from "./pages/searchNews";
 
 function App() {
@@ -16,10 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/sources" element={<Sources />} />
-          <Route
-            path="/Newsbycategorie/:categorie"
-            element={<Newsbycategorie />}
-          />
+          <Route path="/newsbycategorie/:categorie" element={<Newsbycategorie />} />          
           <Route path="/searchnews" element={<Searchnews />} />
         </Routes>
         <Footer />
